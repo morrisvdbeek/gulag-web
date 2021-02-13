@@ -356,3 +356,8 @@ a.foot-link {
 .load {
     opacity: 0.7;
 }
+
+html {
+
+    --main: 225;
+}

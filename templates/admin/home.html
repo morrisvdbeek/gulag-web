@@ -13,7 +13,7 @@
                 <div class="title">total users</div>
                 <i class="fa fa-users"></i>
                 <div class="value">{{ dashdata['count'] }}</div>
-                <div class="stat">that's a lot of people!</div>
+                <div class="stat"></div>
             </div>
         </div>
         <div class="column is-paddingless p-3">
@@ -23,7 +23,7 @@
                 <div class="value">
                     <% online_users %>
                 </div>
-                <div class="stat">rising in popularity are we?</div>
+                <div class="stat"></div>
             </div>
         </div>
         <div class="column is-paddingless p-3">
@@ -31,7 +31,7 @@
                 <div class="title">lastest users</div>
                 <i class="fa fa-book"></i>
                 <div class="value">{{ dashdata['lastest_user'] }}</div>
-                <div class="stat">latest and greatest! welcome!</div>
+                <div class="stat"></div>
             </div>
         </div>
         <div class="column is-paddingless p-3">
@@ -39,7 +39,7 @@
                 <div class="title">total banned</div>
                 <i class="fa fa-calendar"></i>
                 <div class="value">NotImplemented</div>
-                <div class="stat">naughty naughty :(</div>
+                <div class="stat"></div>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
         <div class="recent-beat">
             <div class="columns is-marginless">
                 <div class="column is-paddingless is-vcentered">
-                    <h2 class="section-title">Recent Users</h2>
+                    <h2 class="section-title"></h2>
                 </div>
             </div>
             <div class="blockdata">
@@ -62,12 +62,12 @@
                         </span>
                         <div class="user-footer">
                             <span class="user-mapper">
-                            {{ timeago.format((datetime.datetime.fromtimestamp(user.creation_time)), 
+                            {{ timeago.format((datetime.datetime.fromtimestamp(user.creation_time)),
                                 (datetime.datetime.now() + datetime.timedelta(seconds = 60 * 3.4))) }}
                             </span>
                             <div class="d-flex align-items-baseline">
                                 <span>
-                                {{ timeago.format((datetime.datetime.fromtimestamp(user.latest_activity)), 
+                                {{ timeago.format((datetime.datetime.fromtimestamp(user.latest_activity)),
                                     (datetime.datetime.now() + datetime.timedelta(seconds = 60 * 3.4))) }}
                                 </span>
                                 <div class="target-button newmaps-color">

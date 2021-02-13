@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
 
 # app name
-app_name = 'gulag-web'
+app_name = 'TheNewWorld.cc'
 
 # secret key
-secret_key = 'changeme'
+secret_key = 'ChangeThis'
 
 # Domain (used for api, avatar, get_online)
-domain = "varkaria.cyou"
+domain = "varkaria.cyou" #  Checking If Your Online
 
 # mysql credentials
 mysql = {
     'db': 'gulag',
     'host': 'localhost',
-    'user': 'cmyui',
-    'password': 'changeme',
+    'user': 'YourUser',
+    'password': 'ChangeThis',
 }
 
 # enable debug (disable when in production to improve performance)
 debug = False
 
 # social links (used throughout gulag-web)
-discord_server = 'https://discord.com/invite/Y5uPvcNpD9'
+discord_server = 'https://discord.gg/raMwWnYN'

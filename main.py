@@ -11,7 +11,7 @@ from objects import glob
 __all__ = ()
 
 app = Quart(__name__)
-version = Version(0, 1, 0)
+version = Version(0, 0, 1)
 
 app.secret_key = glob.config.secret_key
 
@@ -19,7 +19,7 @@ app.secret_key = glob.config.secret_key
 async def mysql_conn() -> None:
     glob.db = AsyncSQLPool()
     await glob.db.connect(glob.config.mysql)
-    log('Connected to MySQL!', Ansi.LGREEN)
+    log('Succesfully connected to all servers and MSQL! Goodluck!', Ansi.LGREEN)
 
 _version = repr(version)
 @app.before_serving
